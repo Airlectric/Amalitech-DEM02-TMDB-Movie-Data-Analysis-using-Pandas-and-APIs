@@ -1,0 +1,28 @@
+# scripts/tmdb_client.py
+
+import requests
+from .config import API_KEY, BASE_URL, DEFAULT_LANGUAGE
+
+def fetch_popular_movies(page=1):
+    """Fetches a list of popular movies from TMDB."""
+    url = f"{BASE_URL}/movie/popular"
+    params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE, "page": page}
+    return requests.get(url, params=params).json()["results"]
+
+def search_movie(title):
+    """Searches for a movie by title."""
+    url = f"{BASE_URL}/search/movie"
+    params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE, "query": title}
+    return requests.get(url, params=params).json()["results"]
+
+def get_movie_details(movie_id):
+    """Fetches detailed information about a specific movie by its ID."""
+    url = f"{BASE_URL}/movie/{movie_id}"
+    params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE}
+    return requests.get(url, params=params).json()
+
+def get_movie_credits(movie_id):
+    """Fetches the credits (cast and crew) for a specific movie by its ID."""
+    url = f"{BASE_URL}/movie/{movie_id}/credits"
+    params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE}
+    return requests.get(url, params=params).json()

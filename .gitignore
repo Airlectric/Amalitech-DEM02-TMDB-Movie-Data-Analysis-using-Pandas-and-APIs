@@ -1,1 +1,4 @@
 movieenv
+.env
+__pycache__/
+
