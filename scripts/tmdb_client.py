@@ -19,13 +19,6 @@ def get_movie_details(movie_id):
     params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE}
     return requests.get(url, params=params).json()
 
-def get_movie_credits(movie_id):
-    """Fetches the credits (cast and crew) for a specific movie by its ID."""
-    url = f"{BASE_URL}/movie/{movie_id}/credits"
-    params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE}
-    return requests.get(url, params=params).json()
-
-
 def get_all_movies_by_ids(movie_ids):
     """Fetches detailed information for multiple movies
        by their IDs."""
