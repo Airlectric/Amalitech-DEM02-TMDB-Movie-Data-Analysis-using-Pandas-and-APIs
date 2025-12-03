@@ -15,7 +15,7 @@ def search_movie(title):
 
 def get_movie_details(movie_id):
     """Fetches detailed information about a specific movie by its ID."""
-    url = f"{BASE_URL}/movie/{movie_id}"
+    url = f"{BASE_URL}/movie/{movie_id}?append_to_response=credits"
     params = {"api_key": API_KEY, "language": DEFAULT_LANGUAGE}
     return requests.get(url, params=params).json()
 

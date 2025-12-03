@@ -22,6 +22,32 @@ def extract_json_field(df, col, key, join_with="|"):
     df[col] = df[col].apply(extract)
     return df
 
+def extract_credit_json_fields(df, col='credits', join_with="|"):
+    """
+    Extracts cast and crew information from the credits column.
+    """
+    def extract_cast(x):
+        if isinstance(x, dict) and 'cast' in x:
+            cast_list = x['cast']
+            cast_names = [member.get('name', '') for member in cast_list if 'name' in member]
+            return join_with.join(cast_names)
+        return np.nan
+
+    def extract_director(x):
+        if isinstance(x, dict) and 'crew' in x:
+            crew_list = x['crew']
+            directors = [member.get('name', '') for member in crew_list if member.get('job', '') == 'Director' and 'name' in member]
+            return join_with.join(directors)
+        return np.nan
+
+    df['cast'] = df[col].apply(extract_cast)
+    df['cast_size'] = df[col].apply(lambda x: len(x['cast']) if isinstance(x, dict) and 'cast' in x else 0)
+    df['director'] = df[col].apply(extract_director)
+    df['crew_size'] = df[col].apply(lambda x: len(x['crew']) if isinstance(x, dict) and 'crew' in x else 0)
+    df.drop(columns=[col], inplace=True)
+    return df
+
+
 def extract_production_countries(df, col='origin_country', join_with="|"):
     """
     Extracts country codes from the production_countries column.
@@ -68,6 +94,7 @@ def clean_movie_data(movies_df):
         movies_df = extract_json_field(movies_df, col, key)
 
     movies_df = extract_production_countries(movies_df, col='origin_country')
+    movies_df = extract_credit_json_fields(movies_df, col='credits')
 
     # Convert numeric columns
     numeric_columns = ['budget', 'popularity', 'id', 'revenue', 'runtime', 'vote_average', 'vote_count']
@@ -92,8 +119,9 @@ def replace_zero_values(df):
 
 def convert_budget_to_millions(df):
     """Converts budget from dollars to millions of dollars."""
-    df['budget'] = df['budget'] / 1_000_000
-    df['revenue'] = df['budget'] / 1_000_000
+    df['budget_musd'] = df['budget'] / 1_000_000
+    df['revenue_musd'] = df['budget'] / 1_000_000
+    df.drop(columns=['budget', 'revenue'], inplace=True)
     return df
 
 def clean_text_placeholders(df):
