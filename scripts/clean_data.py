@@ -154,6 +154,31 @@ def removing_na_and_duplicates(df):
 
 
 
+# -------------------------------------
+# Reordering and Finalizing DataFrame
+# ---------------------------------------
+
+def reorder_columns(df, desired_order):
+    """Reorders DataFrame columns based on the desired order."""
+    existing_columns = [col for col in desired_order if col in df.columns]
+    remaining_columns = [col for col in df.columns if col not in existing_columns]
+    new_order = existing_columns + remaining_columns
+    return df[new_order]
+
+def reset_index(df):
+    """Resets the DataFrame index."""
+    return df.reset_index(drop=True)
+
+def finalize_dataframe(df):
+    """Finalizes the DataFrame by reordering columns and resetting the index."""
+    desired_order = ['id', 'title', 'tagline', 'release_date', 'genres', 'belongs_to_collection',
+                    'original_language', 'budget_musd', 'revenue_musd', 'production_companies',
+                    'production_countries', 'vote_count', 'vote_average', 'popularity', 'runtime',
+                    'overview', 'spoken_languages', 'poster_path', 'cast', 'cast_size', 'director', 'crew_size']
+    df = reorder_columns(df, desired_order)
+    df = reset_index(df)
+    return df
+
 
 
 
