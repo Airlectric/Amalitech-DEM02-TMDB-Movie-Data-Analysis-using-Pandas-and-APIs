@@ -34,7 +34,6 @@ def get_kpis(df):
         "highest_rated": rank_movies(df, "vote_average", ascending=False),
         'lowest_rated': rank_movies(df, "vote_average", ascending=True),
         'most_popular': rank_movies(df, "popularity", ascending=False)
-
     }
 
 # -------------------------------------
@@ -42,17 +41,77 @@ def get_kpis(df):
 # ------------------------------------------
 def search_best_scifi_action_bruce(df):
     mask = (
-        df['genres'].str.contains('Science Fiction', case=False, na=False)
-        & df['genres'].str.contains("Action", case=False, na=False)
-        & df['cast'].str.contains('Brue Willis', case=False, na=False)
+        df['genres'].str.contains('Science Fiction', case=False, na=False, regex=False)
+        & df['genres'].str.contains("Action", case=False, na=False, regex=False)
+        & df['cast'].str.contains('Bruce Willis', case=False, na=False, regex=False)
     )
     return df[mask].sort_values('vote_average', ascending=False)
 
 def search_uma_thurman_tarentino(df):
     mask = (
-        df['cast'].str.contains('Uma Thurman', case=False, na=False)
-        & df['director'].str.contains('Quentin Tarantino', case=False, na=False)
+        df['cast'].str.contains('Uma Thurman', case=False, na=False, regex=False)
+        & df['director'].str.contains('Quentin Tarantino', case=False, na=False, regex=False)
     )
     return df[mask].sort_values('vote_average', ascending=False)
 
 
+# -----------------------------------------------
+# Franchise VS standalone Performance
+# ------------------------------------------
+
+def franchise_vs_standalone(df):
+    df = calculate_roi(df)
+
+    df["is_franchise"] = df['belongs_to_collection'].notna()
+
+    grouped = df.groupby('is_franchise').agg(
+        mean_revenue=('revenue_musd', 'mean'),
+        median_roi=('roi', 'median'),
+        mean_budget=('budget_musd', 'mean'),
+        mean_popularity=('popularity', 'mean'),
+        mean_rating=('vote_average', 'mean')
+    )
+
+    return grouped
+
+
+# -----------------------------------------------
+# Most Successful Franchises
+# ------------------------------------------
+def franchise_success(df):
+    df = df.copy()
+
+    df = df.dropna(subset=['belongs_to_collection'])
+
+    grouped = df.groupby('belongs_to_collection').agg(
+        count_movies=('id', 'count'),
+
+        total_budget_musd=('budget_musd', 'sum'),
+        mean_budget_musd=('budget_musd', 'mean'),
+        
+        total_revenue_musd=('revenue_musd', 'sum'),
+        mean_revenue_musd=('revenue_musd', 'mean'),
+
+        mean_rating=('vote_average', 'mean'),
+    ).sort_values(by='total_revenue_musd', ascending=False)
+
+    return grouped
+
+# -----------------------------------------------
+# Most Successful Directors 
+# ---------------------------------------------------
+def director_success(df, top_n=10):
+    df = df.copy()
+
+    # Exploded the DataFrame to have one row per director
+    df_exploded = df.assign(director=df['director'].str.split('|')).explode('director')
+
+    grouped = df_exploded.groupby('director').agg(
+        total_movies_directed=('id', 'count'),
+        
+        total_revenue_musd=('revenue_musd', 'sum'),
+
+        mean_rating=('vote_average', 'mean'),
+    ).sort_values(by='total_revenue_musd', ascending=False).head(top_n)
+
+    return grouped
