@@ -120,7 +120,7 @@ def replace_zero_values(df):
 def convert_budget_to_millions(df):
     """Converts budget from dollars to millions of dollars."""
     df['budget_musd'] = df['budget'] / 1_000_000
-    df['revenue_musd'] = df['budget'] / 1_000_000
+    df['revenue_musd'] = df['revenue'] / 1_000_000
     df.drop(columns=['budget', 'revenue'], inplace=True)
     return df
 

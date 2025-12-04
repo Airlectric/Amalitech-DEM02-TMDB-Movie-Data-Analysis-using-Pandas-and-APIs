@@ -15,7 +15,9 @@ def plot_revenue_vs_budget(df):
 def plot_roi_by_genre(df):
     df = calculate_roi(df)
     plt.figure(figsize=(12,6))
-    df.groupby('genres')['roi'].mean().sort_values().plot(kind='bar')
+    df['genre_list'] = df['genres'].str.split('|')
+    df_exploded = df.explode('genre_list')
+    df_exploded.groupby('genre_list')['roi'].mean().sort_values().plot(kind='bar')
     plt.title('ROI Distribution by Genre')
     plt.xlabel('Genre')
     plt.ylabel('Average ROI')
@@ -32,7 +34,6 @@ def plot_popularity_vs_rating(df):
     plt.show()
 
 def plot_yearly_box_office(df):
-    df['release_date'] = pd.to_datetime(df['release_date'], errors='coerce')
     df['release_year'] = df['release_date'].dt.year
     yearly = df.groupby('release_year')['revenue_musd'].sum()
     plt.figure(figsize=(12,6))
@@ -45,7 +46,7 @@ def plot_yearly_box_office(df):
 
 def plot_franchise_vs_standalone(df):
 
-    df["is_franchise"] = df['belongs_to_collection'].notna()
+    df["is_franchise"] = df['belongs_to_collection'].notna().map({True: 'Franchise', False: 'Standalone'})
 
     comparison = df.groupby('is_franchise')['revenue_musd'].mean()
 
