@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from logging_config import logger
 
 # ------------------------------------------------
 # KPI Calculations for Best/Worst Performing Movies
