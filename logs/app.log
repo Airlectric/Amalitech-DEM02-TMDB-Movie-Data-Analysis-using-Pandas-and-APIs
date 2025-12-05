@@ -1,0 +1,264 @@
+2025-12-05 13:36:22,852 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:36:22,859 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:37:14,281 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 13:37:16,233 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:20,497 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:23,834 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:27,140 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:30,507 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:33,855 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:37:33,857 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 13:37:33,863 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 13:37:33,865 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 13:37:53,498 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/299534?append_to_response=credits
+2025-12-05 13:37:53,506 - ERROR - tmdb_client - Failed to fetch movies 299534: Max retries reached.
+2025-12-05 13:37:53,509 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 13:38:12,589 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/19995?append_to_response=credits
+2025-12-05 13:38:12,594 - ERROR - tmdb_client - Failed to fetch movies 19995: Max retries reached.
+2025-12-05 13:38:12,596 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 13:38:32,378 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/140607?append_to_response=credits
+2025-12-05 13:38:32,383 - ERROR - tmdb_client - Failed to fetch movies 140607: Max retries reached.
+2025-12-05 13:38:32,385 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 13:38:59,848 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/299536?append_to_response=credits
+2025-12-05 13:38:59,854 - ERROR - tmdb_client - Failed to fetch movies 299536: Max retries reached.
+2025-12-05 13:38:59,857 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 13:39:19,461 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/597?append_to_response=credits
+2025-12-05 13:39:19,467 - ERROR - tmdb_client - Failed to fetch movies 597: Max retries reached.
+2025-12-05 13:39:19,470 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 13:39:40,575 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/135397?append_to_response=credits
+2025-12-05 13:39:40,581 - ERROR - tmdb_client - Failed to fetch movies 135397: Max retries reached.
+2025-12-05 13:39:40,584 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 13:40:02,596 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/420818?append_to_response=credits
+2025-12-05 13:40:02,610 - ERROR - tmdb_client - Failed to fetch movies 420818: Max retries reached.
+2025-12-05 13:40:02,617 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 13:40:25,126 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/24428?append_to_response=credits
+2025-12-05 13:40:25,132 - ERROR - tmdb_client - Failed to fetch movies 24428: Max retries reached.
+2025-12-05 13:40:25,134 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 13:40:46,730 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/168259?append_to_response=credits
+2025-12-05 13:40:46,736 - ERROR - tmdb_client - Failed to fetch movies 168259: Max retries reached.
+2025-12-05 13:40:46,740 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 13:41:09,356 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/99861?append_to_response=credits
+2025-12-05 13:41:09,363 - ERROR - tmdb_client - Failed to fetch movies 99861: Max retries reached.
+2025-12-05 13:41:09,365 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 13:41:31,874 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/284054?append_to_response=credits
+2025-12-05 13:41:31,882 - ERROR - tmdb_client - Failed to fetch movies 284054: Max retries reached.
+2025-12-05 13:41:31,886 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 13:41:53,695 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/12445?append_to_response=credits
+2025-12-05 13:41:53,701 - ERROR - tmdb_client - Failed to fetch movies 12445: Max retries reached.
+2025-12-05 13:41:53,704 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 13:42:15,251 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/181808?append_to_response=credits
+2025-12-05 13:42:15,257 - ERROR - tmdb_client - Failed to fetch movies 181808: Max retries reached.
+2025-12-05 13:42:15,260 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 13:42:38,450 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/330457?append_to_response=credits
+2025-12-05 13:42:38,459 - ERROR - tmdb_client - Failed to fetch movies 330457: Max retries reached.
+2025-12-05 13:42:38,463 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 13:43:01,187 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/351286?append_to_response=credits
+2025-12-05 13:43:01,197 - ERROR - tmdb_client - Failed to fetch movies 351286: Max retries reached.
+2025-12-05 13:43:01,200 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 13:43:23,661 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/109445?append_to_response=credits
+2025-12-05 13:43:23,667 - ERROR - tmdb_client - Failed to fetch movies 109445: Max retries reached.
+2025-12-05 13:43:23,670 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 13:43:44,705 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/321612?append_to_response=credits
+2025-12-05 13:43:44,717 - ERROR - tmdb_client - Failed to fetch movies 321612: Max retries reached.
+2025-12-05 13:43:44,723 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 13:44:06,411 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/260513?append_to_response=credits
+2025-12-05 13:44:06,418 - ERROR - tmdb_client - Failed to fetch movies 260513: Max retries reached.
+2025-12-05 13:50:15,764 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:50:15,772 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:50:16,598 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 13:50:18,648 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:23,446 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:27,432 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:31,368 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:35,421 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:39,134 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 13:50:39,137 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 13:50:39,142 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 13:50:39,145 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 13:51:06,377 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/299534?append_to_response=credits
+2025-12-05 13:51:06,386 - ERROR - tmdb_client - Failed to fetch movies 299534: Max retries reached.
+2025-12-05 13:51:06,386 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 13:51:31,576 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/19995?append_to_response=credits
+2025-12-05 13:51:31,587 - ERROR - tmdb_client - Failed to fetch movies 19995: Max retries reached.
+2025-12-05 13:51:31,591 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 13:51:53,508 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/140607?append_to_response=credits
+2025-12-05 13:51:53,524 - ERROR - tmdb_client - Failed to fetch movies 140607: Max retries reached.
+2025-12-05 13:51:53,538 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 13:52:37,426 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:52:37,445 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:53:52,665 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:53:52,683 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:55:44,976 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:55:44,984 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:56:11,048 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:56:11,061 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 13:56:36,931 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
+2025-12-05 13:56:36,942 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
+2025-12-05 14:07:59,511 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:08:01,479 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:05,154 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:08,925 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:13,274 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:17,307 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:21,204 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:08:21,209 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:08:21,222 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:08:21,230 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:08:23,490 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:08:25,899 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:08:27,763 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:08:29,687 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:08:31,661 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:08:33,925 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:08:35,860 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:08:37,839 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:08:39,641 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:08:41,744 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:10:42,853 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:10:44,848 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:10:49,181 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:10:53,367 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:10:57,117 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:11:01,150 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:11:05,059 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:11:05,067 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:11:05,084 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:11:05,086 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:11:06,792 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:11:08,589 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:11:10,497 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:11:12,625 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:11:14,339 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:11:16,220 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:11:18,051 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:11:19,768 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:11:21,459 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:11:23,490 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:11:25,960 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 14:11:27,841 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 14:11:29,533 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 14:11:31,152 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 14:11:33,080 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 14:11:34,946 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 14:11:37,446 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 14:25:28,838 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:25:30,722 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:34,620 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:38,510 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:42,502 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:46,497 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:50,557 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:25:50,557 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:25:50,567 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:25:50,571 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:25:52,447 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:25:54,606 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:25:56,438 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:25:58,387 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:26:00,634 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:26:02,787 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:26:04,726 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:26:06,722 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:26:08,625 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:26:10,466 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:26:12,327 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 14:26:20,433 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 14:26:22,870 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 14:26:24,905 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 14:26:26,465 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 14:26:28,177 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 14:26:29,996 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 14:35:56,166 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:35:58,009 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:02,738 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:06,468 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:10,557 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:14,619 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:18,507 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:36:18,518 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:36:18,536 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:36:18,541 - WARNING - tmdb_client - Skipping movie ID 0 due to fetch error: Max retries reached.
+2025-12-05 14:36:18,546 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:36:55,531 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:36:57,476 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:01,637 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:05,717 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:09,769 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:13,749 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:17,490 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:37:17,500 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:37:17,516 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:37:17,518 - WARNING - tmdb_client - Skipping movie ID 0 due to fetch error: Max retries reached.
+2025-12-05 14:37:17,524 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:37:19,569 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:37:21,596 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:37:23,348 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:37:25,317 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:37:27,691 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:37:29,592 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:37:31,361 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:37:33,067 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:37:35,057 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:37:36,876 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:37:39,221 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 14:37:43,884 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 14:37:45,457 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 14:37:47,372 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 14:37:49,356 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 14:37:51,290 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 14:37:53,236 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 14:47:14,788 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:47:16,621 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:20,379 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:24,149 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:28,408 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:32,234 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:36,396 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:47:36,399 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:47:36,407 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:47:36,409 - WARNING - tmdb_client - Skipping movie ID 0 due to fetch error: Max retries reached.
+2025-12-05 14:47:36,413 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:47:51,636 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:47:59,004 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:48:00,985 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:48:02,920 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:48:04,576 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:48:06,819 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:48:09,854 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:48:12,286 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:48:14,424 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:48:16,777 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:48:19,127 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 14:48:21,034 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 14:48:23,096 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 14:48:25,254 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 14:48:27,199 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 14:48:29,006 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 14:48:31,186 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 14:49:28,302 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 14:49:30,757 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:35,270 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:39,277 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:43,575 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:47,674 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:51,972 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 14:49:51,977 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 14:49:51,982 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 14:49:51,986 - WARNING - tmdb_client - Skipping movie ID 0 due to fetch error: Max retries reached.
+2025-12-05 14:49:51,986 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 14:49:54,046 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 14:49:56,296 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 14:49:58,466 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 14:50:00,744 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 14:50:02,796 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 14:50:09,395 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 14:50:11,843 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 14:50:14,157 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 14:50:16,567 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 14:50:18,727 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 14:50:23,040 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 14:50:25,984 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 14:50:28,159 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 14:50:30,449 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 14:50:32,541 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 14:50:34,935 - INFO - tmdb_client - Fetching movie ID: 321612
