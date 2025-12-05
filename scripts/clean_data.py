@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from logging_config import logger
+from logger_config import logger
 
 
 def drop_irrelevant_columns(movies_df, columns_to_drop):
@@ -192,7 +192,7 @@ def drop_rows_with_na_in_critical_columns(df, critical_columns):
     logger.info(f"Dropping rows with NA in critical columns: {critical_columns}")
     before = len(df)
     df = df.dropna(subset=critical_columns)
-    logger.info(f"Rows removed: {before - len(df)} → Remaining: {len(df)}")
+    logger.info(f"Rows removed: {before - len(df)} and Remaining: {len(df)}")
     return df
 
 
@@ -201,7 +201,7 @@ def keep_rows_with_min_non_nan(df, min_non_nan=10):
     logger.info(f"Keeping only rows with >= {min_non_nan} non-NA values")
     before = len(df)
     df = df[df.notna().sum(axis=1) >= min_non_nan]
-    logger.info(f"Rows removed: {before - len(df)} → Remaining: {len(df)}")
+    logger.info(f"Rows removed: {before - len(df)} and Remaining: {len(df)}")
     return df
 
 

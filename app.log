@@ -1,4 +1,0 @@
-2025-12-05 13:21:31,378 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
-2025-12-05 13:21:31,382 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.
-2025-12-05 13:33:40,031 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/1084242?append_to_response=credits
-2025-12-05 13:33:40,036 - ERROR - tmdb_client - Failed to fetch movies 1084242: Max retries reached.

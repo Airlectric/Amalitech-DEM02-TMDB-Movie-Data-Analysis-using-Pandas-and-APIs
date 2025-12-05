@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from logging_config import logger
+from logger_config import logger
 
 
 # ------------------------------------------------
@@ -39,11 +39,17 @@ def get_kpis(df):
         "higest_budget": rank_movies(df, "budget_musd", ascending=False),
         "higest_profit": rank_movies(df, "profit", ascending=False),
         "lowest_profit": rank_movies(df, "profit", ascending=True),
-        "higest_roi": rank_movies(df.dropna(subset=['roi']), "roi", ascending=False),
-        "lowest_roi": rank_movies(df.dropna(subset=['roi']), "roi", ascending=True),
+
+        # Including the movies with the Budget >= 10M
+        "higest_roi": rank_movies(df[df['budget_musd'] >= 10], "roi", ascending=False),
+        "lowest_roi": rank_movies(df[df['budget_musd'] >= 10], "roi", ascending=True),
+
         "most_voted": rank_movies(df, "vote_count", ascending=False),
-        "highest_rated": rank_movies(df, "vote_average", ascending=False),
-        'lowest_rated': rank_movies(df, "vote_average", ascending=True),
+
+        # Including movies with vote_count >= 10
+        "highest_rated": rank_movies(df[df['vote_count'] >= 10], "vote_average", ascending=False),
+        'lowest_rated': rank_movies(df[df['vote_count'] >= 10], "vote_average", ascending=True),
+
         'most_popular': rank_movies(df, "popularity", ascending=False)
     }
     logger.info("KPI dictionary generated successfully")
