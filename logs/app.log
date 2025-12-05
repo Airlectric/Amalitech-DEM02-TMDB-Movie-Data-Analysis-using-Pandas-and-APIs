@@ -605,3 +605,91 @@
 2025-12-05 16:09:03,667 - INFO - kpi_analysis - Calculating top 10 most successful directors by total revenue
 2025-12-05 16:09:03,690 - INFO - kpi_analysis - Director success ranking completed – top 10 returned
 2025-12-05 16:09:07,103 - INFO - kpi_analysis - Calculating ROI (only for movies with budget >= 10M USD)
+2025-12-05 17:56:25,952 - INFO - tmdb_client - Fetching movie ID: 0
+2025-12-05 17:56:27,795 - ERROR - tmdb_client - HTTP error on attempt 0: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:56:40,545 - ERROR - tmdb_client - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:56:46,258 - ERROR - tmdb_client - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:56:52,839 - ERROR - tmdb_client - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:56:57,067 - ERROR - tmdb_client - HTTP error on attempt 4: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:57:03,879 - ERROR - tmdb_client - HTTP error on attempt 5: 404 Client Error: Not Found for url: https://api.themoviedb.org/3/movie/0?append_to_response=credits&api_key=d855a01d02babf081991d455eff39348&language=en-US&movie_id=0
+2025-12-05 17:57:03,882 - ERROR - tmdb_client - Failed after 5 attempts: https://api.themoviedb.org/3/movie/0?append_to_response=credits
+2025-12-05 17:57:03,888 - ERROR - tmdb_client - Failed to fetch movies 0: Max retries reached.
+2025-12-05 17:57:03,891 - WARNING - tmdb_client - Skipping movie ID 0 due to fetch error: Max retries reached.
+2025-12-05 17:57:03,893 - INFO - tmdb_client - Fetching movie ID: 299534
+2025-12-05 17:57:07,992 - INFO - tmdb_client - Fetching movie ID: 19995
+2025-12-05 17:57:11,408 - INFO - tmdb_client - Fetching movie ID: 140607
+2025-12-05 17:57:14,610 - INFO - tmdb_client - Fetching movie ID: 299536
+2025-12-05 17:57:21,434 - INFO - tmdb_client - Fetching movie ID: 597
+2025-12-05 17:57:23,817 - INFO - tmdb_client - Fetching movie ID: 135397
+2025-12-05 17:57:25,778 - INFO - tmdb_client - Fetching movie ID: 420818
+2025-12-05 17:57:28,872 - INFO - tmdb_client - Fetching movie ID: 24428
+2025-12-05 17:57:33,332 - INFO - tmdb_client - Fetching movie ID: 168259
+2025-12-05 17:57:38,807 - INFO - tmdb_client - Fetching movie ID: 99861
+2025-12-05 17:57:44,138 - INFO - tmdb_client - Fetching movie ID: 284054
+2025-12-05 17:57:46,716 - INFO - tmdb_client - Fetching movie ID: 12445
+2025-12-05 17:57:51,283 - INFO - tmdb_client - Fetching movie ID: 181808
+2025-12-05 17:57:53,446 - INFO - tmdb_client - Fetching movie ID: 330457
+2025-12-05 17:57:57,185 - INFO - tmdb_client - Fetching movie ID: 351286
+2025-12-05 17:58:06,720 - INFO - tmdb_client - Fetching movie ID: 109445
+2025-12-05 17:58:13,416 - INFO - tmdb_client - Fetching movie ID: 321612
+2025-12-05 17:58:17,349 - INFO - tmdb_client - Fetching movie ID: 260513
+2025-12-05 17:58:32,198 - INFO - clean_data - Dropping columns: ['adult', 'imdb_id', 'original_title', 'video', 'homepage', 'success', 'status_code', 'status_message']
+2025-12-05 17:58:41,254 - INFO - clean_data - Starting clean_movie_data pipeline
+2025-12-05 17:58:41,270 - INFO - clean_data - Extracting field 'name' from column 'belongs_to_collection'
+2025-12-05 17:58:41,275 - INFO - clean_data - Extracting field 'name' from column 'genres'
+2025-12-05 17:58:41,281 - INFO - clean_data - Extracting field 'english_name' from column 'spoken_languages'
+2025-12-05 17:58:41,287 - INFO - clean_data - Extracting field 'name' from column 'production_companies'
+2025-12-05 17:58:41,291 - INFO - clean_data - Extracting field 'name' from column 'production_countries'
+2025-12-05 17:58:41,298 - INFO - clean_data - Extracting production countries from column 'origin_country'
+2025-12-05 17:58:41,305 - INFO - clean_data - Extracting cast & crew from column 'credits'
+2025-12-05 17:58:41,323 - INFO - clean_data - Finished extracting credits – dropped original 'credits' column
+2025-12-05 17:58:41,327 - INFO - clean_data - Converting columns to numeric: ['budget', 'popularity', 'id', 'revenue', 'runtime', 'vote_average', 'vote_count']
+2025-12-05 17:58:41,341 - INFO - clean_data - Converting columns to datetime: ['release_date']
+2025-12-05 17:58:41,408 - INFO - clean_data - Finished clean_movie_data pipeline
+2025-12-05 17:58:42,861 - INFO - clean_data - Inspecting value counts for columns: ['belongs_to_collection', 'genres', 'production_countries', 'production_companies', 'spoken_languages', 'origin_country', 'cast', 'cast_size', 'director', 'crew_size']
+2025-12-05 17:58:44,232 - INFO - clean_data - Starting replace_unrealistic_values pipeline
+2025-12-05 17:58:44,239 - INFO - clean_data - Replacing zero values in budget, revenue, runtime with NaN
+2025-12-05 17:58:44,252 - INFO - clean_data - Converting budget & revenue to millions of USD
+2025-12-05 17:58:44,261 - INFO - clean_data - Cleaning placeholder text in tagline & overview
+2025-12-05 17:58:44,273 - INFO - clean_data - Setting vote_average to NaN when vote_count == 0
+2025-12-05 17:58:44,284 - INFO - clean_data - Finished replace_unrealistic_values pipeline
+2025-12-05 17:58:49,073 - INFO - clean_data - Starting removing_na_and_duplicates pipeline
+2025-12-05 17:58:49,076 - INFO - clean_data - Removing duplicate rows
+2025-12-05 17:58:49,083 - INFO - clean_data - Rows after duplicate removal: 18
+2025-12-05 17:58:49,087 - INFO - clean_data - Dropping rows with NA in critical columns: ['title', 'id']
+2025-12-05 17:58:49,092 - INFO - clean_data - Rows removed: 0 and Remaining: 18
+2025-12-05 17:58:49,097 - INFO - clean_data - Keeping only rows with >= 10 non-NA values
+2025-12-05 17:58:49,102 - INFO - clean_data - Rows removed: 0 and Remaining: 18
+2025-12-05 17:58:49,105 - INFO - clean_data - Filtering for released movies only
+2025-12-05 17:58:49,111 - INFO - clean_data - Kept only 'Released' movies: 18 (removed 0)
+2025-12-05 17:58:49,116 - INFO - clean_data - Final dataset size after NA & duplicate removal: 18 rows
+2025-12-05 17:58:50,322 - INFO - clean_data - Finalizing DataFrame (reordering + index reset)
+2025-12-05 17:58:50,328 - INFO - clean_data - Reordering columns according to desired order
+2025-12-05 17:58:50,336 - INFO - clean_data - Resetting DataFrame index
+2025-12-05 17:58:50,340 - INFO - clean_data - DataFrame finalized – shape: (18, 24)
+2025-12-05 17:58:51,116 - INFO - kpi_analysis - Starting KPI calculation: profit, ROI, and top rankings
+2025-12-05 17:58:51,120 - INFO - kpi_analysis - Calculating profit (revenue - budget) in millions USD
+2025-12-05 17:58:51,125 - INFO - kpi_analysis - Calculating ROI (only for movies with budget >= 10M USD)
+2025-12-05 17:58:51,130 - INFO - kpi_analysis - Ranking top 10 movies by 'revenue_musd' (ascending=False)
+2025-12-05 17:58:51,135 - INFO - kpi_analysis - Ranking top 10 movies by 'budget_musd' (ascending=False)
+2025-12-05 17:58:51,140 - INFO - kpi_analysis - Ranking top 10 movies by 'profit' (ascending=False)
+2025-12-05 17:58:51,147 - INFO - kpi_analysis - Ranking top 10 movies by 'profit' (ascending=True)
+2025-12-05 17:58:51,153 - INFO - kpi_analysis - Ranking top 10 movies by 'roi' (ascending=False)
+2025-12-05 17:58:51,158 - INFO - kpi_analysis - Ranking top 10 movies by 'roi' (ascending=True)
+2025-12-05 17:58:51,162 - INFO - kpi_analysis - Ranking top 10 movies by 'vote_count' (ascending=False)
+2025-12-05 17:58:51,168 - INFO - kpi_analysis - Ranking top 10 movies by 'vote_average' (ascending=False)
+2025-12-05 17:58:51,173 - INFO - kpi_analysis - Ranking top 10 movies by 'vote_average' (ascending=True)
+2025-12-05 17:58:51,179 - INFO - kpi_analysis - Ranking top 10 movies by 'popularity' (ascending=False)
+2025-12-05 17:58:51,183 - INFO - kpi_analysis - KPI dictionary generated successfully
+2025-12-05 17:58:58,186 - INFO - kpi_analysis - Searching for best Sci-Fi + Action movies starring Bruce Willis
+2025-12-05 17:58:58,196 - INFO - kpi_analysis - Found 0 Sci-Fi/Action movies with Bruce Willis
+2025-12-05 17:58:58,516 - INFO - kpi_analysis - Searching for movies with Uma Thurman directed by Quentin Tarantino
+2025-12-05 17:58:58,526 - INFO - kpi_analysis - Found 0 Uma Thurman + Quentin Tarantino collaborations
+2025-12-05 17:58:59,070 - INFO - kpi_analysis - Comparing franchise vs standalone movie performance
+2025-12-05 17:58:59,077 - INFO - kpi_analysis - Calculating ROI (only for movies with budget >= 10M USD)
+2025-12-05 17:58:59,107 - INFO - kpi_analysis - Franchise vs standalone comparison completed
+2025-12-05 17:58:59,736 - INFO - kpi_analysis - Analyzing most successful movie franchises by total revenue
+2025-12-05 17:58:59,764 - INFO - kpi_analysis - Franchise success analysis completed – 10 franchises ranked
+2025-12-05 17:59:00,774 - INFO - kpi_analysis - Calculating top 10 most successful directors by total revenue
+2025-12-05 17:59:00,805 - INFO - kpi_analysis - Director success ranking completed – top 10 returned
+2025-12-05 17:59:02,928 - INFO - kpi_analysis - Calculating ROI (only for movies with budget >= 10M USD)
